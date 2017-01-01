@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#change bath to current directory (no ./ for executables)
+PATH=$PATH:.:~/bin
+
+#TODO
+#Cuda path
+#YCM path
+
+#Use vim commands in CLI
+set -o vi
+
