@@ -51,6 +51,10 @@ alias vprof='vim ~/.bash_profile'
 alias vrc='vim ~/.bashrc'
 alias cls='clear && ls'
 alias clels='clear && ls'
+alias pull='git pull'
+alias push='git push'
+alias commit='git commit'
+alias add='git add'
 
 #alias p='perl'
 
