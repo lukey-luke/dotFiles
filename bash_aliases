@@ -32,6 +32,14 @@ mkcdv()
 {
     cd ./..
 }
+f()
+{
+   find . -iname "*$1*" ${@:2}
+}
+r()
+{
+   grep "$1" ${@:2} -R
+}
 
 #Aliases - More value for ea keystroke!
 alias cl='clear'
@@ -55,6 +63,7 @@ alias pull='git pull'
 alias push='git push'
 alias commit='git commit'
 alias add='git add'
+alias m='man'
 
 #alias p='perl'
 
