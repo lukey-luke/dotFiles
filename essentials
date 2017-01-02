@@ -5,6 +5,7 @@ PATH=$PATH:.:~/bin
 
 #TODO
 #Cuda path
+#Python path
 #YCM path
 
 #Use vim commands in CLI

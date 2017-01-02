@@ -45,11 +45,12 @@ alias jaguar='ssh lshort2@jaguar.csuchico.edu'
 alias qq='echo "gg n00b <(*_*)>" && sleep 0.3 && exit'
 alias pdoc='perldoc'
 alias prl='perl'
-alias p='perl'
 alias py='python'
 alias py3='python3'
 alias vprof='vim ~/.bash_profile'
 alias vrc='vim ~/.bashrc'
 alias cls='clear && ls'
 alias clels='clear && ls'
+
+#alias p='perl'
 
