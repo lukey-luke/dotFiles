@@ -64,6 +64,7 @@ alias push='git push'
 alias commit='git commit'
 alias add='git add'
 alias m='man'
+alias clone='git clone'
 
 #alias p='perl'
 
