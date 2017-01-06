@@ -19,7 +19,7 @@ mvcd()
 }
 programming()
 {
-	cd ~/pr0gramming/
+	cd $HOME/pr0gramming/
 }
 mkcdv()
 {
@@ -27,10 +27,6 @@ mkcdv()
     mkdir -p -- "$1" &&
         cd -P -- "$1" &&
         vim "$2"
-}
-..()
-{
-    cd ./..
 }
 f()
 {
@@ -65,6 +61,10 @@ alias commit='git commit'
 alias add='git add'
 alias m='man'
 alias clone='git clone'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias :q='echo "this is not vim, you n00b." && sleep 2 && exit'
 
 #alias p='perl'
 
