@@ -67,6 +67,7 @@ alias ....='cd ../../..'
 alias :q='echo "this is not vim, you n00b." && sleep 2 && exit'
 alias dot='cd $HOME/dotFiles'
 alias vdiff='vimdiff'
+alias la='ls -a'
 
 #alias p='perl'
 
