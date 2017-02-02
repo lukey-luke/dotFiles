@@ -3,4 +3,5 @@
 #allow use of word "open" to open file in window manager, nemo rather than typing nemo
 alias open='nemo'
 alias ise='/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ise'
+alias proj='cd $HOME/Documents/490A/'
 
