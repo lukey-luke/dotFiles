@@ -6,15 +6,16 @@ call vundle#begin()
 " 'Let Vundle manage Vundle.' (req'd)
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'HerringtonDarkholme/yats.vim'
 
 call vundle#end()
 filetype plugin indent on
 syntax on
 set number
 "Tabs = 4 spaces...
-set tabstop=3
-set shiftwidth=3
+set tabstop=2
+set shiftwidth=2
 set expandtab
 "tries to always keep 7 lines above and below cursor
 set scrolloff=7

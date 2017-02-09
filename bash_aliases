@@ -36,6 +36,12 @@ r()
 {
    grep "$1" ${@:2} -R
 }
+#clone()
+#{
+#   git clone $2
+#
+#   cd $2
+#}
 
 #Aliases - More value for ea keystroke!
 alias cl='clear'
