@@ -45,7 +45,7 @@ r()
 
 #Aliases - More value for ea keystroke!
 alias cl='clear'
-alias g+='g++ -Wall -Werror -W -O2 -g -std=c++11 -o prog' # Jason Groven recommends using -O2 for optimizing code
+alias g+='g++ -pedantic -Wall -Werror -W -O2 -g -std=c++11 -o prog' # Jason Groven recommends using -O2 for optimizing code
 alias v='vim'
 alias ndkbuild='$HOME/Library/Android/sdk/ndk-bundle/ndk-build'
 alias src='source'
@@ -65,6 +65,8 @@ alias pull='git pull'
 alias push='git push'
 alias commit='git commit'
 alias add='git add'
+alias branch='git branch'
+alias checkout='git checkout'
 alias m='man'
 alias clone='git clone'
 alias ..='cd ..'
