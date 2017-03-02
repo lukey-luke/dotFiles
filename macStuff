@@ -10,6 +10,10 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias mkcl="$HOME/pr0gramming/goFast/insertClass/prog $2"
 alias tbp='cd $HOME/Skool/Tau_Beta_Pi/TauBetaPi_CAAA_site/tbp'
 alias bui='cd $HOME/pr0gramming/430/BossyUI'
+alias sandy='npm run sandbox'
+alias sand='echo "Anakin does not like sand" | cowsay -f dragon && npm run sandbox'
+alias myron='cd /Users/DarkSide/pr0gramming/430/pairProg/attempt2/myronFucksCactii'
+alias update='brew update'
 #@@@ add gitit
 #alias gitit='$HOME/pr0gramming/goFast/gitPullAddCommitPush/letsdothis.pl'
 

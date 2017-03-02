@@ -28,6 +28,10 @@ mkcdv()
         cd -P -- "$1" &&
         vim "$2"
 }
+rl()
+{
+  grep -rl "$2" .
+}
 f()
 {
    find . -iname "*$1*" ${@:2}
@@ -46,6 +50,7 @@ r()
 #Aliases - More value for ea keystroke!
 alias cl='clear'
 alias g+='g++ -pedantic -Wall -Werror -W -O2 -g -std=c++11 -o prog' # Jason Groven recommends using -O2 for optimizing code
+alias gc='gcc -pedantic -Wall -Werror -W -O2 -g -std=c11 -o cprog' # Jason Groven recommends using -O2 for optimizing code
 alias v='vim'
 alias ndkbuild='$HOME/Library/Android/sdk/ndk-bundle/ndk-build'
 alias src='source'
@@ -76,6 +81,7 @@ alias :q='echo "this is not vim, you n00b." && sleep 2 && exit'
 alias dot='cd $HOME/dotFiles'
 alias vdiff='vimdiff'
 alias la='ls -a'
+alias status='git status'
 
 #alias p='perl'
 
