@@ -4,6 +4,17 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+#COWZ=/usr/local/Cellar/cowsay/3.04/share/cows
+#sandz(){
+#  CHOSEN_COW= $(basename ls $COWZ | head -$((RANDOM%$(ls | wc -w)+1)) | tail -1 .cow)
+#  echo "Chosen cow: $CHOSEN_COW"
+#  CHOSEN_COW= $(basename "$COWZ/$CHOSEN_COW .cow")
+#  echo "Chosen cow: $CHOSEN_COW"
+#  echo "Anakin Skywalker does not like sand" | cowsay -f CHOSEN_COW
+#
+#  echo $CHOSEN_COW
+#}
+
 #extra commands/aliases
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
@@ -12,8 +23,10 @@ alias tbp='cd $HOME/Skool/Tau_Beta_Pi/TauBetaPi_CAAA_site/tbp'
 alias bui='cd $HOME/pr0gramming/430/BossyUI'
 alias sandy='npm run sandbox'
 alias sand='echo "Anakin does not like sand" | cowsay -f dragon && npm run sandbox'
+alias myro='cd /Users/DarkSide/pr0gramming/430/pairProg/attempt2/myronFucksCactii'
 alias myron='cd /Users/DarkSide/pr0gramming/430/pairProg/attempt2/myronFucksCactii'
 alias update='brew update'
+alias e499='cd $HOME/Skool/EECE_499'
 #@@@ add gitit
 #alias gitit='$HOME/pr0gramming/goFast/gitPullAddCommitPush/letsdothis.pl'
 
