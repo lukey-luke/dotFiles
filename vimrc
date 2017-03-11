@@ -24,7 +24,7 @@ set ruler
 set smarttab
 set autoindent
 set smartindent
-inoremap { {<CR><BS>}<Esc>ko
+"inoremap { {<CR><BS>}<Esc>ko
 "inoremap } {<space><space><space><space>}<Esc>hhi
 inoremap } {}<Esc>i
 "still need to add ctrl + '{' for single lines
