@@ -28,10 +28,6 @@ mkcdv()
         cd -P -- "$1" &&
         vim "$2"
 }
-rl()
-{
-  grep -rl "$2" .
-}
 f()
 {
    find . -iname "*$1*" ${@:2}
@@ -40,17 +36,16 @@ r()
 {
    grep "$1" ${@:2} -R
 }
-#clone()
-#{
-#   git clone $2
-#
-#   cd $2
-#}
+internetz()
+{
+   sudo ip address add 10.11.50.213/16 dev eth0 broadcast +
+   sudo ip link set dev eth0 up
+   sudo ip route add default via 10.11.0.1
+}
 
 #Aliases - More value for ea keystroke!
 alias cl='clear'
-alias g+='g++ -pedantic -Wall -Werror -W -O2 -g -std=c++11 -o prog' # Jason Groven recommends using -O2 for optimizing code
-alias gc='gcc -pedantic -Wall -Werror -W -O2 -g -std=c11 -o cprog' # Jason Groven recommends using -O2 for optimizing code
+alias g+='g++ -Wall -Werror -W -O2 -g -std=c++11 -o prog' # Jason Groven recommends using -O2 for optimizing code
 alias v='vim'
 alias ndkbuild='$HOME/Library/Android/sdk/ndk-bundle/ndk-build'
 alias src='source'
@@ -70,8 +65,6 @@ alias pull='git pull'
 alias push='git push'
 alias commit='git commit'
 alias add='git add'
-alias branch='git branch'
-alias checkout='git checkout'
 alias m='man'
 alias clone='git clone'
 alias ..='cd ..'
@@ -81,7 +74,12 @@ alias :q='echo "this is not vim, you n00b." && sleep 2 && exit'
 alias dot='cd $HOME/dotFiles'
 alias vdiff='vimdiff'
 alias la='ls -a'
-alias status='git status'
 
 #alias p='perl'
+
+#change bath to current directory (no ./ for executables)
+PATH=$PATH:.:~/bin
+
+#Use vim commands in CLI
+set -o vi
 

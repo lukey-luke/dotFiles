@@ -1,21 +1,11 @@
 set nocompatible
 filetype off
-" set the runtime path to include Vundle and ititialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" 'Let Vundle manage Vundle.' (req'd)
-Plugin 'VundleVim/Vundle.vim'
-
-"Plugin 'Valloric/YouCompleteMe'
-Plugin 'HerringtonDarkholme/yats.vim'
-
-call vundle#end()
 filetype plugin indent on
 syntax on
 set number
 "Tabs = 4 spaces...
-set tabstop=2
-set shiftwidth=2
+set tabstop=3
+set shiftwidth=3
 set expandtab
 "tries to always keep 7 lines above and below cursor
 set scrolloff=7
@@ -25,7 +15,7 @@ set ruler
 set smarttab
 set autoindent
 set smartindent
-"inoremap { {<CR><BS>}<Esc>ko
+inoremap { {<CR><BS>}<Esc>ko
 "inoremap } {<space><space><space><space>}<Esc>hhi
 inoremap } {}<Esc>i
 "still need to add ctrl + '{' for single lines
@@ -38,8 +28,6 @@ map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Set scripts to be executable from the shell
 "au BufWritePost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent !chmod +x <afile> | endif | endif
-au BufWritePost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent execute "!chmod a+x <afile>" | endif | endif
-
 
 "Lines beginning w/ ':' are vim commands that are automatically run when the
 "program loads.
