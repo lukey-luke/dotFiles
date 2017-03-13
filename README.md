@@ -2,7 +2,7 @@
 
 
 
-``
+```
         /|\       []   |"""""""""""--__    /|  |\
        / | \      ||   |____________--""  ( |__| )
       | ( ) |     ||         | |           \    /
@@ -16,7 +16,7 @@
     | |     | |  ||||        | |           / __ \
      \ \   / /   ||||        | |          ( |  | )
       `-' `-'    `--'        `-'           \|  |/
-``
+```
 
 This is a set of useful bash aliases, bash functions, and vim settings I use to optimize my workflow.
 
