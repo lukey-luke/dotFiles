@@ -1,4 +1,22 @@
-# dotFiles - yet another dotfile repo
+# dotFiles - Make Bash and ViM easier.
 
-Useful CLI (and vim) stuff.
-Aliases to optimize da workflow d0e.
+
+
+``
+        /|\       []   |"""""""""""--__    /|  |\
+       / | \      ||   |____________--""  ( |__| )
+      | ( ) |     ||         | |           \    /
+      | .-. |     ||         | |            |12|
+      ]( 0 )[     ||         | |            |  |
+      / `-' \     ||         | |            |  |
+     / /' `\ \    ||         | |            |  |
+    | |     | |  |%%|        | |            |  |
+    | |     | |  ,'`,        | |            |  |
+    | |     | |  ||||        | |            |14|
+    | |     | |  ||||        | |           / __ \
+     \ \   / /   ||||        | |          ( |  | )
+      `-' `-'    `--'        `-'           \|  |/
+``
+
+This is a set of useful bash aliases, bash functions, and vim settings I use to optimize my workflow.
+
