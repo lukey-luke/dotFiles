@@ -50,7 +50,7 @@ r()
 #Aliases - More value for ea keystroke!
 alias cl='clear'
 alias g+='g++ -pedantic -Wall -Werror -W -O2 -g -std=c++11 -o prog' # Jason Groven recommends using -O2 for optimizing code
-alias gc='gcc -pedantic -Wall -Werror -W -O2 -g -std=c11 -o cprog' # Jason Groven recommends using -O2 for optimizing code
+alias gc='gcc -pedantic -Wall -Werror -W -O2 -g -o cprog' # Jason Groven recommends using -O2 for optimizing code
 alias v='vim'
 alias ndkbuild='$HOME/Library/Android/sdk/ndk-bundle/ndk-build'
 alias src='source'
@@ -72,15 +72,17 @@ alias commit='git commit'
 alias add='git add'
 alias checkout='git status'
 alias checkout='git checkout'
+alias stash='git stash'
 alias m='man'
 alias clone='git clone'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias :q='echo "this is not vim, you n00b." && sleep 2 && exit'
-alias dot='cd $HOME/dotFiles'
+alias dot='cd $HOME/.dotFiles'
 alias vdiff='vimdiff'
 alias la='ls -a'
 alias status='git status'
+alias tar?='echo "tar -czvf nameOfArchive.tar.gz /path/to/dirOrFile"'
 
 #alias p='perl'
 
