@@ -26,8 +26,14 @@ alias sand='echo "Anakin does not like sand" | cowsay -f dragon && npm run sandb
 alias myro='cd /Users/DarkSide/pr0gramming/430/pairProg/attempt2/myronFucksCactii'
 alias myron='cd /Users/DarkSide/pr0gramming/430/pairProg/attempt2/myronFucksCactii'
 alias cramIt='cd /Users/DarkSide/pr0gramming/430/pairProg/cramIt/BossyUI'
+alias cramShit='cd /Users/DarkSide/pr0gramming/430/new_side/student-site'
 alias update='brew update'
 alias e499='cd $HOME/Skool/EECE_499'
+alias pac='python pacman.py -p ANNAgent'
+alias nog='python pacman.py -p ANNAgent -l mediumClassicNoGhosts'
+alias nogf='python pacman.py -p ANNAgent -l mediumClassicNoGhosts --frameTime 0'
+alias nogfnd='python pacman.py -p ANNAgent -l mediumClassicNoGhosts --frameTime 0 -q'
+alias pacf='python pacman.py --frameTime 0 -p ANNAgent'
 #@@@ add gitit
 #alias gitit='$HOME/pr0gramming/goFast/gitPullAddCommitPush/letsdothis.pl'
 # Jake Hansen's thing to display git branch in terminal
@@ -36,4 +42,8 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+export PATH=$PATH:$HOME/Skool/Senior_Project/RiscV/riscv/bin
+export RISCV=$HOME/Skool/Senior_Project/RiscV/riscv
 
