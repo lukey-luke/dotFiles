@@ -40,12 +40,11 @@ r()
 {
    grep "$1" ${@:2} -R
 }
-#clone()
-#{
-#   git clone $2
-#
-#   cd $2
-#}
+clone()
+{
+   git clone $1
+   cd $1
+}
 
 #Aliases - More value for ea keystroke!
 alias cl='clear'
@@ -56,6 +55,7 @@ alias ndkbuild='$HOME/Library/Android/sdk/ndk-bundle/ndk-build'
 alias src='source'
 alias srb="source ~/.bashrc 2> /dev/null && source ~/.bash_profile 2> /dev/null && source ~/.bash_aliases 2> /dev/null"
 alias ndk='cd /Users/DarkSide/Desktop/430ffmpegandroid/newGithubTut/android-ndk-r11c'
+alias desktop='cd ~/Desktop'
 alias jaguar='ssh lshort2@jaguar.csuchico.edu'
 alias qq='echo "gg n00b <(*_*)>" && sleep 0.3 && exit'
 alias pdoc='perldoc'
@@ -77,7 +77,6 @@ alias checkout='git checkout'
 alias stash='git stash'
 alias poop='git stash pop'
 alias m='man'
-alias clone='git clone'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -88,5 +87,6 @@ alias la='ls -a'
 alias status='git status'
 alias tar?='echo "tar -czvf nameOfArchive.tar.gz /path/to/dirOrFile"'
 
+#alias clone='git clone'
 #alias p='perl'
 
