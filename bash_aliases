@@ -30,7 +30,11 @@ mkcdv()
 }
 rl()
 {
-  grep -rl "$2" .
+  grep -rl "$1" .
+}
+rn()
+{
+  grep -rn "$1" .
 }
 f()
 {
@@ -39,11 +43,6 @@ f()
 r()
 {
    grep "$1" ${@:2} -R
-}
-clone()
-{
-   git clone $1
-   cd $1
 }
 
 #Aliases - More value for ea keystroke!
@@ -66,6 +65,7 @@ alias vprof='vim ~/.bash_profile'
 alias vrc='vim ~/.bashrc'
 alias cls='clear && ls'
 alias clels='clear && ls'
+alias clone='git clone'
 alias pull='git pull'
 alias pul='git pull'
 alias push='git push'
