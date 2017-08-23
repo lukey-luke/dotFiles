@@ -34,6 +34,11 @@ alias nog='python pacman.py -p ANNAgent -l mediumClassicNoGhosts'
 alias nogf='python pacman.py -p ANNAgent -l mediumClassicNoGhosts --frameTime 0'
 alias nogfnd='python pacman.py -p ANNAgent -l mediumClassicNoGhosts --frameTime 0 -q'
 alias pacf='python pacman.py --frameTime 0 -p ANNAgent'
+alias vrc='vim ~/.dotFiles/macStuff'
+helicopter() {
+    cd /Library/WebServer/Documents/
+    echo "Place files for apache2 web server in here."
+}
 #@@@ add gitit
 #alias gitit='$HOME/pr0gramming/goFast/gitPullAddCommitPush/letsdothis.pl'
 # Jake Hansen's thing to display git branch in terminal
@@ -47,3 +52,4 @@ export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 export PATH=$PATH:$HOME/Skool/Senior_Project/RiscV/riscv/bin
 export RISCV=$HOME/Skool/Senior_Project/RiscV/riscv
 
+# export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"

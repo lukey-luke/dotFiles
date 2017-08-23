@@ -87,6 +87,3 @@ alias la='ls -a'
 alias status='git status'
 alias tar?='echo "tar -czvf nameOfArchive.tar.gz /path/to/dirOrFile"'
 
-#alias clone='git clone'
-#alias p='perl'
-
