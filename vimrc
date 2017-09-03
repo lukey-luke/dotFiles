@@ -13,9 +13,9 @@ call vundle#end()
 filetype plugin indent on
 syntax on
 set number
-"Tabs = 4 spaces...
-set tabstop=4
-set shiftwidth=4
+"Tabs = 2 spaces...
+set tabstop=2
+set shiftwidth=2
 set expandtab
 "tries to always keep 7 lines above and below cursor
 set scrolloff=7
@@ -25,8 +25,8 @@ set ruler
 set smarttab
 set autoindent
 set smartindent
-inoremap { {<CR><BS>}<Esc>ko
-inoremap } {<space><space><space><space>}<Esc>hhi
+"inoremap { {<CR><BS>}<Esc>ko
+"inoremap } {<space><space><space><space>}<Esc>hhi
 "inoremap } {}<Esc>i
 "still need to add ctrl + '{' for single lines
 "may just forget about that and use delimitMate

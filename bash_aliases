@@ -44,6 +44,20 @@ r()
 {
    grep "$1" ${@:2} -R
 }
+dlpage()
+{
+  wget \
+    --recursive \
+    --no-clobber \
+    --page-requisites \
+    --html-extension \
+    --convert-links \
+    --restrict-file-names=windows \
+    --domains website.org \
+    --no-parent \
+      "$1"
+}
+
 
 #Aliases - More value for ea keystroke!
 alias cl='clear'
