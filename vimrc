@@ -25,9 +25,9 @@ set ruler
 set smarttab
 set autoindent
 set smartindent
-"inoremap { {<CR><BS>}<Esc>ko
+inoremap { {<CR><BS>}<Esc>ko
 "inoremap } {<space><space><space><space>}<Esc>hhi
-"inoremap } {}<Esc>i
+inoremap } {}<Esc>i
 "still need to add ctrl + '{' for single lines
 "may just forget about that and use delimitMate
 "disable stupid warning '.ycm_extra_conf.py Load?'
@@ -40,6 +40,12 @@ map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 " Set scripts to be executable from the shell
 "au BufWritePost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent !chmod +x <afile> | endif | endif
 au BufWritePost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent execute "!chmod a+x <afile>" | endif | endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GPL stuff req'd for Tyson's Game Programming Language (CSCI 515)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au BufRead,BufNewFile *.gpl    set filetype=gpl
+
 
 
 "Lines beginning w/ ':' are vim commands that are automatically run when the
