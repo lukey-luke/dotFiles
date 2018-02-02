@@ -35,7 +35,7 @@ alias nogf='python pacman.py -p ANNAgent -l mediumClassicNoGhosts --frameTime 0'
 alias nogfnd='python pacman.py -p ANNAgent -l mediumClassicNoGhosts --frameTime 0 -q'
 alias pacf='python pacman.py --frameTime 0 -p ANNAgent'
 alias vrc='vim ~/.dotFiles/macStuff'
-alias gp='/Users/DarkSide/pr0gramming/515/gpl_apple_old'
+alias p2='cd $HOME/pr0gramming/515/compilers/p2'
 helicopter() {
     cd /Library/WebServer/Documents/
     echo "Place files for apache2 web server in here."

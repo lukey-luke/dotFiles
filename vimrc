@@ -34,6 +34,7 @@ inoremap } {}<Esc>i
 let g:ycm_confirm_extra_conf = 0
 "Maps f4 to switch between .cpp and .h files from same directory
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+map <F4> :e %:p:s,.y$,.X123X,:s,.l$,.y,:s,.X123X$,.l,<CR>
 "add an option for shift + f4 to save and switch
 
 
