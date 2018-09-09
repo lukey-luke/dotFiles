@@ -2,12 +2,12 @@
 
 #allow use of word "open" to open file in window manager, nemo rather than typing nemo
 alias open='nemo'
-alias ise='/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ise'
-alias proj='cd $HOME/Documents/490A/'
-alias godot='$HOME/Documents/gameDev/Godot_v2.1.3-stable_x11.64'
-alias tiled='$HOME/Documents/gameDev/Tiled-1.0.1-x86_64.AppImage'
-alias tf='source ~/pr0gramming/python/tensorflow/bin/activate'
-alias vrc='vim ~/.dotFiles/mintStuff'
+# alias ise='/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ise'
+# alias proj='cd $HOME/Documents/490A/'
+# alias godot='$HOME/Documents/gameDev/Godot_v2.1.3-stable_x11.64'
+# alias tiled='$HOME/Documents/gameDev/Tiled-1.0.1-x86_64.AppImage'
+# alias tf='source ~/pr0gramming/python/tensorflow/bin/activate'
+alias vrc='vim ~/.dotFiles/bash_aliases'
 
 
 # Jake Hansen's thing to display git branch in terminal
