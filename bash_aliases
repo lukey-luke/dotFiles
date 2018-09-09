@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# - or -         ;)
+#!/usr/bin/env zsh
+#
 #(okay, there are bash functions in here too)
 
 # Make Terminal Better...
@@ -105,6 +108,9 @@ alias v='vim'
 alias ndkbuild='$HOME/Library/Android/sdk/ndk-bundle/ndk-build'
 alias src='source'
 alias srb="source ~/.bashrc 2> /dev/null && source ~/.bash_profile 2> /dev/null && source ~/.bash_aliases 2> /dev/null"
+# can't use these with bash... time for zsh?
+# alias cd/='cd /'
+# alias c/='cd /'
 alias ndk='cd /Users/DarkSide/Desktop/430ffmpegandroid/newGithubTut/android-ndk-r11c'
 alias desktop='cd ~/Desktop'
 alias jaguar='ssh lshort2@jaguar.csuchico.edu'
@@ -134,9 +140,10 @@ alias m='man'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias :q='echo "this is not vim, you n00b." && sleep 2 && exit'
 alias dot='cd $HOME/.dotFiles'
 alias vdiff='vimdiff'
 alias la='ls -a'
-alias tar?='echo "tar -czvf nameOfArchive.tar.gz /path/to/dirOrFile"'
+alias 'tar?'='echo "tar -czvf nameOfArchive.tar.gz /path/to/dirOrFile"'
 
