@@ -1,0 +1,8 @@
+# In order to install on new machine, run
+# for i in $(cat brew_leaves); do; brew install "$i"; done
+autojump
+autossh
+exa
+neovim
+nvm
+rbenv
