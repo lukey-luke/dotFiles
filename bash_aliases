@@ -1,3 +1,11 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
 #!/usr/bin/env bash
 # - or -         ;)
 #!/usr/bin/env zsh
@@ -147,4 +155,5 @@ alias dot='cd $HOME/.dotFiles'
 alias vdiff='vimdiff'
 alias la='ls -a'
 alias 'tar?'='echo "tar -czvf nameOfArchive.tar.gz /path/to/dirOrFile"'
+alias vim='nvim'
 
