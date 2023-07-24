@@ -1,3 +1,9 @@
+#!/usr/bin/env bash
+# - or -         ;)
+#!/usr/bin/env zsh
+#
+#(okay, there are bash functions in here too)
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
@@ -6,11 +12,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
-#!/usr/bin/env bash
-# - or -         ;)
-#!/usr/bin/env zsh
-#
-#(okay, there are bash functions in here too)
 
 # Make Terminal Better...
 mkcd()
@@ -128,7 +129,7 @@ alias prl='perl'
 alias py='python'
 alias py3='python3'
 alias vprof='vim ~/.bash_profile'
-alias vrc='vim ~/.dotFiles/bash_aliases'
+alias vrc='vim ~/code/dotFiles/bash_aliases'
 alias cls='clear && ls'
 alias clels='clear && ls'
 alias clone='git clone'
@@ -156,4 +157,5 @@ alias vdiff='vimdiff'
 alias la='ls -a'
 alias 'tar?'='echo "tar -czvf nameOfArchive.tar.gz /path/to/dirOrFile"'
 alias vim='nvim'
+alias runvets='cd $VETS_API_HOME && foreman start -m all=1,clamd=0,freshclam=0'
 
