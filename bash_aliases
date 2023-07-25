@@ -11,6 +11,17 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+# pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
+
+plugin=(
+  pyenv
+)
+
+eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 
 # Make Terminal Better...
@@ -116,7 +127,7 @@ alias gc='gcc -pedantic -Wall -Werror -W -O2 -g -o cprog' # Jason Groven recomme
 alias v='vim'
 alias ndkbuild='$HOME/Library/Android/sdk/ndk-bundle/ndk-build'
 alias src='source'
-alias srb="source ~/.bashrc 2> /dev/null && source ~/.bash_profile 2> /dev/null && source ~/.bash_aliases 2> /dev/null"
+alias srb='source ~/.zprofile 2> /dev/null && echo "aliases updated 🧜"'
 # can't use these with bash... time for zsh?
 # alias cd/='cd /'
 # alias c/='cd /'
@@ -129,7 +140,7 @@ alias prl='perl'
 alias py='python'
 alias py3='python3'
 alias vprof='vim ~/.bash_profile'
-alias vrc='vim ~/code/dotFiles/bash_aliases'
+alias vrc='vim ~/code/dotFiles/bash_aliases && srb || echo "failed to source aliases??! ❌💀❌"'
 alias cls='clear && ls'
 alias clels='clear && ls'
 alias clone='git clone'
